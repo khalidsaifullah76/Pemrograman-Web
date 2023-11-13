@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS2</title>
+    <style>
+        h1{
+            margin-left: 3%;
+            color: rgb(4, 54, 74);
+        }
+        fieldset{
+           
+            margin-right: 65%;
+			border-color: red; 
+			box-shadow: 2px 2px 4px #333;
+            background: linear-gradient(rgb(23, 107, 135),rgb(23, 107, 135),rgb(218, 255, 251));
+           }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+    <h1>Regitrasi Kendaraan Anda</h1>
+    <fieldset>
+        <table>
+            <tr>
+                <td>Status</td>
+                <td>
+                    <input type="radio" name="status" id="M">Mahasiswa
+                    <input type="radio" name="status" id="D">Dosen
+                </td>
+            </tr>
+            <tr>
+                <td>NIM/NIDN</td>
+                <td>
+                    <input type="number" name="NIM/NIDN">
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap:</td>
+                <td>
+                    <input type="text" name="Nama Lengkap">
+                </td>
+            </tr>
+            <tr>
+                <td>Prodi:</td>
+                <td>
+                    <select name="Prodi"> 
+                        <option value="">Teknik Informatika</option>
+                        <option value="">Sistem Operasi</option>
+                        <option value="">Bisnis Digital</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kendaraan:</td>
+                <td>
+                    <input type="radio" name="jk" id="Mot">Motor
+                    <input type="radio" name="JK" id="mob">Mobil
+                </td>
+            </tr>
+            <tr>
+                <td>NoPol</td>
+                <td>
+                    <input type="text" name="NoPol">
+                </td>
+            </tr>
+            <tr>
+                <td>Merk</td>
+                <td>
+                    <input type="text" name="Merk">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gsearch">Upload STNK</label></td>
+                <td>
+                    <input type="search" id="gsearch" name="gsearch">
+                    <input type="submit" value="Browse" style="background-color:blue;  color: white;box-shadow: 4px 3px 2px black; ">  
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="proses" value="Daftar" style="background-color:blue;  color: white;box-shadow: 4px 3px 2px black; ">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
